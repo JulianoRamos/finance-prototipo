@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Recuperar o acesso</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#0761d1}a:hover{color:#0a4fa8}
+</style>
+</helmet>
+<div style="min-height: 900px; display: flex; flex-wrap: wrap; font-family: 'Geist', Arial, sans-serif; font-size: 14px; line-height: 20px; color: #4d4d4d; background: #fafafa">
+<section aria-label="Finance" style="flex: 2 1 480px; box-sizing: border-box; background: #171717; color: #ffffff; padding: 40px; display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 360px">
+<span style="font-size: 20px; line-height: 28px; font-weight: 600; letter-spacing: -0.4px">Finance</span>
+<svg viewBox="0 0 320 200" width="320" height="200" aria-hidden="true" style="max-width: 100%; height: auto">
+<rect x="0" y="0" width="120" height="200" rx="6" fill="#ededed"></rect>
+<circle cx="24" cy="24" r="1.5" fill="#171717"></circle><circle cx="48" cy="24" r="1.5" fill="#171717"></circle><circle cx="72" cy="24" r="1.5" fill="#171717"></circle><circle cx="96" cy="24" r="1.5" fill="#171717"></circle>
+<circle cx="24" cy="48" r="1.5" fill="#171717"></circle><circle cx="48" cy="48" r="1.5" fill="#171717"></circle><circle cx="72" cy="48" r="1.5" fill="#171717"></circle><circle cx="96" cy="48" r="1.5" fill="#171717"></circle>
+<circle cx="24" cy="72" r="1.5" fill="#171717"></circle><circle cx="48" cy="72" r="1.5" fill="#171717"></circle><circle cx="72" cy="72" r="1.5" fill="#171717"></circle><circle cx="96" cy="72" r="1.5" fill="#171717"></circle>
+<rect x="136" y="0" width="96" height="96" rx="12" fill="#3291ff"></rect>
+<rect x="248" y="0" width="72" height="56" rx="6" fill="#62c073"></rect>
+<rect x="248" y="72" width="32" height="24" rx="6" fill="#f5a623"></rect>
+<rect x="136" y="112" width="184" height="88" rx="12" fill="#454545"></rect>
+</svg>
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 440px">
+<p style="margin: 0; font-size: 32px; line-height: 40px; font-weight: 600; letter-spacing: -1.28px">As finanças da família e das empresas dela, num lugar só.</p>
+<p style="margin: 0; color: #a1a1a1">Cada número com dono: as pessoas físicas, as empresas e a Visão Familiar.</p>
+</div>
+</section>
+<main style="flex: 3 1 560px; box-sizing: border-box; padding: 64px 24px; display: flex; align-items: center; justify-content: center">
+<div style="width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 8px; text-align: center">
+<h1 style="margin: 0; font-size: 24px; line-height: 32px; font-weight: 600; letter-spacing: -0.96px; color: #171717">Recuperar o acesso</h1>
+<span>O Finance não envia e-mail. A recuperação é feita por um link que outra pessoa da casa gera para você.</span>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px">
+<li style="display: flex; gap: 12px; align-items: flex-start"><span aria-hidden="true" style="flex: none; width: 24px; height: 24px; border-radius: 9999px; background: #f2f2f2; color: #171717; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; font-size: 12px">1</span><span>Peça a quem gere os acessos que abra <strong style="color: #171717; font-weight: 500">Usuários e acessos</strong>, escolha o seu usuário e gere um link de recuperação.</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><span aria-hidden="true" style="flex: none; width: 24px; height: 24px; border-radius: 9999px; background: #f2f2f2; color: #171717; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; font-size: 12px">2</span><span>Abra o link em até 1 hora e defina a nova senha. Ele vale uma vez só.</span></li>
+<li style="display: flex; gap: 12px; align-items: flex-start"><span aria-hidden="true" style="flex: none; width: 24px; height: 24px; border-radius: 9999px; background: #f2f2f2; color: #171717; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; font-size: 12px">3</span><span>Ao salvar, todas as suas sessões abertas são encerradas e você entra de novo.</span></li>
+</ol>
+<div style="background: #ffffff; border: 1px solid #ebebeb; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 4px">
+<span style="color: #171717; font-weight: 500">Ninguém consegue entrar?</span>
+<span>Quem cuida do servidor gera o link pelo comando de recuperação de acesso.</span>
+</div>
+<a href="Login.dc.html" style="box-sizing: border-box; font-weight: 500; text-decoration: none; height: 44px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #d4d4d4; border-radius: 6px; color: #171717; background: #ffffff">Voltar para o login</a>
+</div>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

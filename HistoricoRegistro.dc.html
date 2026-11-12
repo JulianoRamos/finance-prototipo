@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Histórico de alterações</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#0761d1}a:hover{color:#0a4fa8}
+</style>
+</helmet>
+<div style="min-height: 900px; box-sizing: border-box; background: rgba(23,23,23,0.4); color: #4d4d4d; font-family: 'Geist', Arial, sans-serif; font-size: 14px; line-height: 20px; display: flex; justify-content: flex-end">
+<aside role="dialog" aria-labelledby="hist-titulo" style="width: 100%; max-width: 520px; min-height: 900px; box-sizing: border-box; background: #ffffff; border-left: 1px solid #ebebeb; box-shadow: 0 2px 2px rgba(0,0,0,0.04), 0 8px 16px -4px rgba(0,0,0,0.08); padding: 24px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<h2 id="hist-titulo" style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600; letter-spacing: -0.4px; color: #171717">Histórico de alterações</h2>
+<span>Clínica Exemplo · entidade</span>
+</div>
+<a href="Entidades.dc.html" aria-label="Fechar o histórico" style="width: 32px; height: 32px; display: inline-flex; align-items: center; justify-content: center; border-radius: 6px; color: #4d4d4d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg></a>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+<li style="border: 1px solid #ebebeb; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap">
+<span style="color: #171717; font-weight: 500">Ana Lima alterou</span>
+<span style="font-variant-numeric: tabular-nums; color: #6b6b6b">12/11/2026 14:32</span>
+</div>
+<table style="width: 100%; border-collapse: collapse">
+<thead><tr>
+<th style="text-align: left; font-weight: 500; color: #6b6b6b; padding: 4px 0">Campo</th>
+<th style="text-align: left; font-weight: 500; color: #6b6b6b; padding: 4px 0">Antes</th>
+<th style="text-align: left; font-weight: 500; color: #6b6b6b; padding: 4px 0">Depois</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 6px 0; border-top: 1px solid #ebebeb">Operação de clínica</td><td style="padding: 6px 0; border-top: 1px solid #ebebeb; text-decoration: line-through">Desligada</td><td style="padding: 6px 0; border-top: 1px solid #ebebeb; color: #171717; font-weight: 500">Ligada</td></tr>
+</tbody>
+</table>
+</li>
+<li style="border: 1px solid #ebebeb; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap">
+<span style="color: #171717; font-weight: 500">Bruno Lima alterou</span>
+<span style="font-variant-numeric: tabular-nums; color: #6b6b6b">05/11/2026 09:15</span>
+</div>
+<table style="width: 100%; border-collapse: collapse">
+<thead><tr>
+<th style="text-align: left; font-weight: 500; color: #6b6b6b; padding: 4px 0">Campo</th>
+<th style="text-align: left; font-weight: 500; color: #6b6b6b; padding: 4px 0">Antes</th>
+<th style="text-align: left; font-weight: 500; color: #6b6b6b; padding: 4px 0">Depois</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 6px 0; border-top: 1px solid #ebebeb">Nome</td><td style="padding: 6px 0; border-top: 1px solid #ebebeb; text-decoration: line-through">Clínica Ex.</td><td style="padding: 6px 0; border-top: 1px solid #ebebeb; color: #171717; font-weight: 500">Clínica Exemplo</td></tr>
+<tr><td style="padding: 6px 0; border-top: 1px solid #ebebeb">Documento</td><td style="padding: 6px 0; border-top: 1px solid #ebebeb; color: #6b6b6b">vazio</td><td style="padding: 6px 0; border-top: 1px solid #ebebeb; color: #171717; font-weight: 500; font-variant-numeric: tabular-nums">00.000.000/0001-00</td></tr>
+</tbody>
+</table>
+</li>
+<li style="border: 1px solid #ebebeb; border-radius: 12px; padding: 16px; display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap">
+<span style="color: #171717; font-weight: 500">Ana Lima criou a entidade</span>
+<span style="font-variant-numeric: tabular-nums; color: #6b6b6b">01/11/2026 18:40</span>
+</li>
+</ol>
+<span style="font-size: 12px; line-height: 16px; color: #6b6b6b">O histórico vem da auditoria e não pode ser alterado. Da mais recente para a mais antiga.</span>
+</aside>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

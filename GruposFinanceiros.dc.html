@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Grupos financeiros</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#0761d1}a:hover{color:#0a4fa8}
+</style>
+</helmet>
+<div style="min-height: 900px; box-sizing: border-box; background: #fafafa; color: #4d4d4d; font-family: 'Geist', Arial, sans-serif; font-size: 14px; line-height: 20px; display: flex; flex-wrap: wrap">
+<nav aria-label="Principal" style="flex: 1 1 240px; max-width: 100%; box-sizing: border-box; border-right: 1px solid #ebebeb; padding: 16px 12px; display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 16px; line-height: 24px; font-weight: 600; letter-spacing: -0.32px; color: #171717; padding: 0 8px 16px">Finance</span>
+<a href="Inicio.dc.html" style="display: flex; align-items: center; height: 32px; padding: 0 8px; border-radius: 6px; color: #4d4d4d; text-decoration: none">Início</a>
+<a href="Entidades.dc.html" style="display: flex; align-items: center; height: 32px; padding: 0 8px; border-radius: 6px; color: #4d4d4d; text-decoration: none">Entidades</a>
+<a href="GruposFinanceiros.dc.html" aria-current="page" style="display: flex; align-items: center; height: 32px; padding: 0 8px; border-radius: 6px; background: #d3e5ff; color: #171717; text-decoration: none; box-shadow: inset 2px 0 0 #0070f3">Grupos financeiros</a>
+<a href="Usuarios.dc.html" style="display: flex; align-items: center; height: 32px; padding: 0 8px; border-radius: 6px; color: #4d4d4d; text-decoration: none">Usuários e acessos</a>
+</nav>
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column">
+<header style="height: 56px; box-sizing: border-box; border-bottom: 1px solid #ebebeb; padding: 0 24px; display: flex; align-items: center; justify-content: space-between">
+<span style="display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 12px; background: #ffffff; color: #171717; border: 1px solid #d4d4d4; border-radius: 6px; font-weight: 500">Visão Familiar <span style="display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 9999px; background: #d3e5ff; color: #0761d1; font-size: 12px; line-height: 16px">Grupo</span></span>
+<span style="color: #171717; font-weight: 500">Ana Lima</span>
+</header>
+<main style="padding: 32px 40px; display: flex; flex-direction: column; gap: 24px; box-sizing: border-box; width: 100%">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<h1 style="margin: 0; font-size: 24px; line-height: 32px; font-weight: 600; letter-spacing: -0.96px; color: #171717">Grupos financeiros</h1>
+<span>Conjuntos de entidades vistos juntos no seletor de contexto.</span>
+</div>
+<button type="button" style="font: inherit; font-weight: 500; height: 36px; padding: 0 12px; background: #ffffff; color: #171717; border: 1px solid #d4d4d4; border-radius: 6px; cursor: pointer">Novo grupo</button>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<div style="flex: 2 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+<div style="background: #d3e5ff; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 4px; box-shadow: inset 0 0 0 1px #0070f3">
+<span style="color: #171717; font-weight: 500">Visão Familiar</span>
+<span style="color: #171717">2 pessoas físicas · criado pelo sistema</span>
+</div>
+<div style="background: #ffffff; border: 1px solid #ebebeb; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 4px">
+<span style="color: #171717; font-weight: 500">Tudo da Ana</span>
+<span>Ana Lima e Clínica Exemplo</span>
+</div>
+</div>
+<section aria-labelledby="grupo-titulo" style="flex: 3 1 520px; min-width: 0; background: #ffffff; border: 1px solid #ebebeb; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<h2 id="grupo-titulo" style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600; letter-spacing: -0.4px; color: #171717">Visão Familiar</h2>
+<span>Só aceita pessoas físicas. As empresas aparecem nela pelos repasses e pela participação societária.</span>
+</div>
+<fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+<legend style="font-weight: 500; letter-spacing: -0.28px; color: #171717; padding: 0 0 8px">Membros</legend>
+<label style="display: flex; align-items: center; gap: 12px; height: 40px; padding: 0 12px; border: 1px solid #ebebeb; border-radius: 6px; color: #171717"><input type="checkbox" checked="checked" style="width: 16px; height: 16px; accent-color: #171717">Ana Lima<span style="margin-left: auto; display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 9999px; background: #d3e5ff; color: #0761d1; font-size: 12px; line-height: 16px; font-weight: 500">PF</span></label>
+<label style="display: flex; align-items: center; gap: 12px; height: 40px; padding: 0 12px; border: 1px solid #ebebeb; border-radius: 6px; color: #171717"><input type="checkbox" checked="checked" style="width: 16px; height: 16px; accent-color: #171717">Bruno Lima<span style="margin-left: auto; display: inline-flex; align-items: center; height: 22px; padding: 0 8px; border-radius: 9999px; background: #d3e5ff; color: #0761d1; font-size: 12px; line-height: 16px; font-weight: 500">PF</span></label>
+<label style="display: flex; align-items: center; gap: 12px; height: 40px; padding: 0 12px; border: 1px solid #ebebeb; border-radius: 6px; color: #a1a1a1"><input type="checkbox" disabled="disabled" style="width: 16px; height: 16px">Clínica Exemplo<span style="margin-left: auto; font-size: 12px; line-height: 16px; color: #6b6b6b">Empresa: não entra na Visão Familiar</span></label>
+</fieldset>
+<div style="display: flex; justify-content: flex-end; gap: 8px">
+<button type="button" style="font: inherit; font-weight: 500; height: 36px; padding: 0 12px; background: #ffffff; color: #171717; border: 1px solid #d4d4d4; border-radius: 6px; cursor: pointer">Descartar</button>
+<button type="button" style="font: inherit; font-weight: 500; height: 36px; padding: 0 12px; border: 0; border-radius: 6px; background: #171717; color: #ffffff; cursor: pointer">Salvar membros</button>
+</div>
+</section>
+</div>
+</main>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

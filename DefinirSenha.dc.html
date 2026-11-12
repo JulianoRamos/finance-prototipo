@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Definir senha</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#0761d1}a:hover{color:#0a4fa8}
+</style>
+</helmet>
+<div style="min-height: 900px; display: flex; flex-wrap: wrap; font-family: 'Geist', Arial, sans-serif; font-size: 14px; line-height: 20px; color: #4d4d4d; background: #fafafa">
+<section aria-label="Finance" style="flex: 2 1 480px; box-sizing: border-box; background: #171717; color: #ffffff; padding: 40px; display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 360px">
+<span style="font-size: 20px; line-height: 28px; font-weight: 600; letter-spacing: -0.4px">Finance</span>
+<svg viewBox="0 0 320 200" width="320" height="200" aria-hidden="true" style="max-width: 100%; height: auto">
+<rect x="0" y="0" width="120" height="200" rx="6" fill="#ededed"></rect>
+<circle cx="24" cy="24" r="1.5" fill="#171717"></circle><circle cx="48" cy="24" r="1.5" fill="#171717"></circle><circle cx="72" cy="24" r="1.5" fill="#171717"></circle><circle cx="96" cy="24" r="1.5" fill="#171717"></circle>
+<circle cx="24" cy="48" r="1.5" fill="#171717"></circle><circle cx="48" cy="48" r="1.5" fill="#171717"></circle><circle cx="72" cy="48" r="1.5" fill="#171717"></circle><circle cx="96" cy="48" r="1.5" fill="#171717"></circle>
+<circle cx="24" cy="72" r="1.5" fill="#171717"></circle><circle cx="48" cy="72" r="1.5" fill="#171717"></circle><circle cx="72" cy="72" r="1.5" fill="#171717"></circle><circle cx="96" cy="72" r="1.5" fill="#171717"></circle>
+<rect x="136" y="0" width="96" height="96" rx="12" fill="#3291ff"></rect>
+<rect x="248" y="0" width="72" height="56" rx="6" fill="#62c073"></rect>
+<rect x="248" y="72" width="32" height="24" rx="6" fill="#f5a623"></rect>
+<rect x="136" y="112" width="184" height="88" rx="12" fill="#454545"></rect>
+</svg>
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 440px">
+<p style="margin: 0; font-size: 32px; line-height: 40px; font-weight: 600; letter-spacing: -1.28px">As finanças da família e das empresas dela, num lugar só.</p>
+<p style="margin: 0; color: #a1a1a1">Cada número com dono: as pessoas físicas, as empresas e a Visão Familiar.</p>
+</div>
+</section>
+<main style="flex: 3 1 560px; box-sizing: border-box; padding: 64px 24px; display: flex; align-items: center; justify-content: center">
+<sc-if value="{{ formulario }}" hint-placeholder-val="{{ true }}">
+<form style="width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 8px; text-align: center">
+<h1 style="margin: 0; font-size: 24px; line-height: 32px; font-weight: 600; letter-spacing: -0.96px; color: #171717">Defina sua senha</h1>
+<span>Link de uso único para ana@exemplo.com.</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<label for="nova" style="font-weight: 500; letter-spacing: -0.28px; color: #171717">Nova senha</label>
+<div style="position: relative; display: flex">
+<input id="nova" type="password" value="••••••••••••" autocomplete="new-password" aria-describedby="regra" style="flex: 1; font: inherit; color: #171717; background: #ffffff; border: 1px solid #8a8a8a; border-radius: 6px; height: 44px; padding: 0 48px 0 12px; box-sizing: border-box">
+<button type="button" aria-label="Mostrar a nova senha" style="position: absolute; right: 4px; top: 4px; width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; background: transparent; border: 0; border-radius: 6px; color: #4d4d4d; cursor: pointer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+</div>
+<span id="regra" style="font-size: 12px; line-height: 16px; color: #6b6b6b">Pelo menos 12 caracteres.</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<label for="confirma" style="font-weight: 500; letter-spacing: -0.28px; color: #171717">Repita a senha</label>
+<div style="position: relative; display: flex">
+<input id="confirma" type="password" value="•••••••••" autocomplete="new-password" aria-invalid="true" aria-describedby="erro" style="flex: 1; font: inherit; color: #171717; background: #ffffff; border: 1px solid #ee0000; border-radius: 6px; height: 44px; padding: 0 48px 0 12px; box-sizing: border-box">
+<button type="button" aria-label="Mostrar a senha repetida" style="position: absolute; right: 4px; top: 4px; width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; background: transparent; border: 0; border-radius: 6px; color: #4d4d4d; cursor: pointer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+</div>
+<span id="erro" style="font-size: 12px; line-height: 16px; color: #c50000">As duas senhas precisam ser iguais.</span>
+</div>
+<button type="submit" style="font: inherit; font-weight: 500; height: 44px; border: 0; border-radius: 6px; background: #171717; color: #ffffff; cursor: pointer">Salvar senha e entrar</button>
+<span style="font-size: 12px; line-height: 16px; color: #6b6b6b; text-align: center">Salvar encerra todas as outras sessões desta conta.</span>
+</form>
+</sc-if>
+<sc-if value="{{ vencido }}" hint-placeholder-val="{{ false }}">
+<div style="width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 20px; text-align: center; align-items: center">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ab570a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<h1 style="margin: 0; font-size: 24px; line-height: 32px; font-weight: 600; letter-spacing: -0.96px; color: #171717">Este link não vale mais</h1>
+<span>Ele venceu ou já foi usado. Peça um novo link a quem gere os acessos.</span>
+</div>
+<a href="Login.dc.html" style="width: 100%; box-sizing: border-box; font-weight: 500; text-decoration: none; height: 44px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid #d4d4d4; border-radius: 6px; color: #171717; background: #ffffff">Voltar para o login</a>
+</div>
+</sc-if>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"estado":{"editor":"enum","options":["formulário","link vencido"],"default":"formulário"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() {
+const estado = this.props.estado ?? 'formulário';
+return { formulario: estado === 'formulário', vencido: estado === 'link vencido' };
+}
+}
+</script>
+</body>
+</html>
