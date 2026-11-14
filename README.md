@@ -14,7 +14,7 @@ Este repositório é público: as telas só trazem dados fictícios.
 | `DefinirSenha` | Definir a senha pelo link de uso único, com o estado de link vencido |
 | `RecuperarAcesso` | Como pedir um link de recuperação, já que o sistema não envia e-mail |
 | `Inicio` | A estrutura do app (barra lateral, barra superior, cabeçalho e corpo) e o seletor de contexto financeiro |
-| `Sessoes` | Minha conta: as sessões ativas e a troca de senha |
+| `Sessoes` | Minha conta: as sessões ativas, com o menu de ações de cada uma, e a troca de senha |
 | `Pesquisa` | A paleta de pesquisa, com sugestões, resultados e o estado vazio |
 | `Entidades` | A lista de entidades e o detalhe da empresa, com as operações e as participações societárias, e os formulários de criar, editar, registrar e encerrar participação |
 | `GruposFinanceiros` | Os grupos financeiros, os membros da Visão Familiar, e criar, editar e excluir um grupo |
@@ -36,3 +36,6 @@ Cada tela mostra os estados por opções do Claude Design. Uma spec ou um ticket
 | `modo` | `Entidades` | `detalhe`, `nova`, `editar`, `participacao`, `encerrar`, `desligar` |
 | `modo` | `GruposFinanceiros` | `detalhe`, `novo`, `editar`, `excluir`, `excluir_com_metas` |
 | `modo` | `Usuarios` | `detalhe`, `novo`, `criado`, `editar`, `desativar` |
+| `lista` | `Entidades`, `HistoricoRegistro`, `Sessoes` | `muitas` (10 por página, com a paginação no rodapé), `poucas` |
+| `lista` | `GruposFinanceiros`, `Usuarios` | `muitos` (10 por página, com a paginação no rodapé), `poucos` |
+| `acoes` | `Sessoes` | `fechado`, `aberto` (o menu de ações da linha aberto) |
