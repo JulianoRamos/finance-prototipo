@@ -21,6 +21,13 @@ Este repositório é público: as telas só trazem dados fictícios.
 | `Usuarios` | Os usuários, a permissão por entidade, o link de recuperação, e criar, editar e desativar um usuário |
 | `HistoricoRegistro` | O histórico de alterações de um registro, num painel lateral sobre Entidades |
 
+## Telas da fase 2
+
+| Tela | O que mostra |
+| --- | --- |
+| `Contas` | A lista de contas do contexto, com o saldo de cada uma, e o detalhe da conta, com os saldos (hoje, numa data e o inicial) e as movimentações; os formulários de criar e editar, e os diálogos de nova movimentação, ajustar o saldo e desativar |
+| `ContasCelular` | Contas no celular: a lista, o detalhe como página própria, as movimentações como lista, o formulário com as ações fixas no rodapé e os diálogos como folha |
+
 ## Estados
 
 Cada tela mostra os estados por opções do Claude Design. Uma spec ou um ticket cita o estado pelo nome da opção e do valor, como `Entidades`, modo `nova`.
@@ -39,3 +46,6 @@ Cada tela mostra os estados por opções do Claude Design. Uma spec ou um ticket
 | `lista` | `Entidades`, `HistoricoRegistro`, `Sessoes` | `muitas` (10 por página, com a paginação no rodapé), `poucas` |
 | `lista` | `GruposFinanceiros`, `Usuarios` | `muitos` (10 por página, com a paginação no rodapé), `poucos` |
 | `acoes` | `Sessoes` | `fechado`, `aberto` (o menu de ações da linha aberto) |
+| `estado` | `Contas` | `lista`, `vazia`, `carregando`, `erro` |
+| `modo` | `Contas` | `detalhe`, `nova`, `editar`, `movimentacao`, `ajuste`, `desativar` |
+| `tela` | `ContasCelular` | `lista`, `detalhe`, `nova`, `movimentacao`, `ajuste`, `desativar` |
